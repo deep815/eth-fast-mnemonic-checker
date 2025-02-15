@@ -24,7 +24,7 @@ const addresses = fs
     })
 
 const provider = //Initialize variables for the parameters
-  const alchemy = new Alchemy(config);
+const alchemy = new Alchemy(config);
 
 const main = async () => {
   //Initialize variables for the parameters
