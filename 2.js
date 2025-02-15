@@ -24,7 +24,7 @@ const addresses = fs
     })
 
 const provider = //Initialize variables for the parameters
-  let addresses = addresses = fs
+  let addresses = fs
     .readFileSync('hits.txt', 'utf8')
     .split('\n')
     .map((val) => {
