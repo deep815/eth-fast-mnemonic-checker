@@ -1,5 +1,5 @@
 // Imports the Alchemy SDK
-require { Alchemy, Network } from "alchemy-sdk";
+import { Alchemy, Network } from "alchemy-sdk";
 
 // Configures the Alchemy SDK
 const config = {
