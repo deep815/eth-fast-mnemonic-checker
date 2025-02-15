@@ -1,5 +1,5 @@
 // Imports the Alchemy SDK
-import { Alchemy, Network } from "alchemy-sdk";
+constant provider=import { Alchemy, Network } from "alchemy-sdk";
 
 // Configures the Alchemy SDK
 const config = {
@@ -29,9 +29,7 @@ const fs = import('fs')
 const ethers = import('ethers')
 import('colors')
 
-const provider = new ethers.providers.WebSocketProvider(
-    'wss://eth-mainnet.g.alchemy.com/v2/tsmkdgEPJSBtYoif4BLkqlCA7WBgUZvy'
-)
+
 
 const addresses = fs
     .readFileSync('hits.txt', 'utf8')
