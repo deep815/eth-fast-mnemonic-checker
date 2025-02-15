@@ -24,14 +24,17 @@ const addresses = fs
     })
 
 const provider = //Initialize variables for the parameters
-  
+  const alchemy = new Alchemy(config);
+
+const main = async () => {
+  //Initialize variables for the parameters
+
   let usdcContract = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
 
   //Call the method to return the token balances for this address
   let response = await alchemy.core.getTokenBalances(addresses, [
     usdcContract,
   ]);
-
   //Logging the response to the console
   console.log(response);
 };
@@ -51,6 +54,4 @@ main();
             console.log('Private Key: '.yellow, addresses[i][1])
         } else {
             console.log(address, 0)
-        }
-    }
-})()
+              }
