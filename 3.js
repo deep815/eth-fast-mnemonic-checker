@@ -3,7 +3,8 @@ const ethers = require('ethers')
 require('colors')
 
 const provider = new ethers.providers.WebSocketProvider(
-    'wss://eth-mainnet.g.alchemy.com/v2/HSC9H26BSMNPUUWS7V3CX12NG7PSYQENHG'
+    'wss://eth-sepolia.g.alchemy.com/v2/YCRkj80UpMYwNjbyJPSSmVx3hNtd4oca'
+ 
 )
 
 const addresses = fs
