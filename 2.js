@@ -23,26 +23,6 @@ const addresses = fs
         return val.split(',')
     })
 
-const provider = //Initialize variables for the parameters
-
-
-const main = async () => {
-  //Initialize variables for the parameters
-
-  let usdcContract = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
-
-  //Call the method to return the token balances for this address
-  let response = await alchemy.core.getTokenBalances(addresses, [
-    usdcContract,
-  ]);
-  //Logging the response to the console
-  console.log(response);
-};
-
-main();
-)
-
-
 
 ;(async () => {
     for (let i = 0; i < addresses.length; i++) {
