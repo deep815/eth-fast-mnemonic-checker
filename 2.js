@@ -1,5 +1,5 @@
 // Imports the Alchemy SDK
-constant provider=import { Alchemy, Network } from "alchemy-sdk";
+const provider = import { Alchemy, Network } from "alchemy-sdk";
 
 // Configures the Alchemy SDK
 const config = {
