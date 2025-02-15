@@ -25,9 +25,9 @@ const main = async () => {
 };
 
 main();
-const fs = require('fs')
-const ethers = require('ethers')
-require('colors')
+const fs = import('fs')
+const ethers = import('ethers')
+import('colors')
 
 const provider = new ethers.providers.WebSocketProvider(
     'wss://eth-mainnet.g.alchemy.com/v2/tsmkdgEPJSBtYoif4BLkqlCA7WBgUZvy'
