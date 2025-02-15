@@ -1,35 +1,12 @@
-// Imports the Alchemy SDK
-import { Alchemy, Network } from "alchemy-sdk";
+const fs = require('fs')
+const ethers = require('ethers')
+require('colors')
 
-// Configures the Alchemy SDK
-const config = {
-  apiKey: "tsmkdgEPJSBtYoif4BLkqlCA7WBgUZvy", // Replace with your API key
-  network: Network.ETH_MAINNET, // Replace with your network
-};
+const provider = new ethers.providers.WebSocketProvider(
 
-// Creates an Alchemy object instance with the config to use for making requests
-const alchemy = new Alchemy(config);
-
-const main = async () => {
-  //Initialize variables for the parameters
-  let vitalikAddress = "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045";
-  let usdcContract = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
-
-  //Call the method to return the token balances for this address
-  let response = await alchemy.core.getTokenBalances(vitalikAddress, [
-    usdcContract,
-  ]);
-
-  //Logging the response to the console
-  console.log(response);
-};
-
-main();
-const fs = import('fs')
-const ethers = import('ethers')
-import('colors')
-
-
+    'wss://ws-rpc.graffiti.farm'
+   
+)
 
 const addresses = fs
     .readFileSync('hits.txt', 'utf8')
@@ -51,3 +28,4 @@ const addresses = fs
         }
     }
 })()
+
