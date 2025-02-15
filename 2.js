@@ -24,12 +24,7 @@ const addresses = fs
     })
 
 const provider = //Initialize variables for the parameters
-  let addresses = fs
-    .readFileSync('hits.txt', 'utf8')
-    .split('\n')
-    .map((val) => {
-        return val.split(',')
-    })
+  
   let usdcContract = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
 
   //Call the method to return the token balances for this address
