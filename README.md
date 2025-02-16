@@ -13,7 +13,7 @@
 - Run `node index.js`
 
 ## To check balance:
-- node check-balances.js
+- node 3.js
 
 ### If you are lucky, you will see something like this:
 (p.s. this one took about ~7 hours, there is no ETA, it depends on your luck and computing power)
